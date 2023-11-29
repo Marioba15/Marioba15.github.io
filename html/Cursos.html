@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- revisar botones diplomas-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Cursos</title>
+    <link rel="stylesheet" type="text/css" href="style_cursos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mis Cursos Extracurriculares</h1>
+    </header>
+
+    <main>
+        <section class="curso">
+            <h2>Curso de Desarrollo Web</h2>
+            <p>Empresa Emisora: IronHack</p>
+            <p>Fecha de Finalización: Diciembre 2023</p>
+            <button onclick="mostrarDiploma('Diplomas/diploma_desarrollo_web.pdf')">Ver Diploma</button>
+        </section>
+
+        <section class="curso">
+            <h2>Genera Imágenes con Inteligencia Artificial: Stable Diffusion</h2>
+            <p>Fecha de Finalización: Noviembre 2023</p>
+            <button onclick="mostrarDiploma('Diplomas/becas_santander___genera_imágenes_con_inteligencia_artificial_ia__stable_diffusion.png')">Ver Diploma</button>
+        </section>
+        
+        <section class="curso">
+            <h2>Data Analysis Course</h2>
+            <p>Fecha de Finalización: Mayo 2023</p>
+            <button onclick="mostrarDiploma('Diplomas/IronHack_Python.pdf')">Ver Diploma</button>        
+        </section>
+        <!-- Agrega más secciones según tus cursos -->
+
+    </main>
+
+    <!-- Transparencia emergente para diplomas -->
+    <div class="overlay" id="overlay" onclick="cerrarDiploma()">
+        <div class="popup" id="popup">
+            <object id="diploma" data="" type="application/pdf" width="100%" height="100%">
+                ¡Ups! Mario Barrio Alonso aún sigue formándose para completar este curso. En breve estará disponible el diploma.
+            </object>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2023 Portfolio de Mario Barrio Alonso. Todos los derechos reservados.</p>
+        <div class="iconos-sociales">
+            <a href="https://www.linkedin.com/in/mario-barrio-alonso-1b6291227/" target="_blank"><img loading="lazy" alt="Sígueme en Linkeding" height="35" width="35" src="https://1.bp.blogspot.com/-Y2K0pMtHvU0/YQoXNjqmTbI/AAAAAAAAA2M/hK_s1Kw_x0U6-fbAab-HNmGzKTC9DBQSQCLcBGAsYHQ/s0/linkedIn.icono-oscuro.png" title="Sígueme en Linkeding"/></a>
+            
+            <a href="https://www.instagram.com/marioba15/" target="_blank"><img loading="lazy" alt="Sígueme en Instagram" height="35" width="35" src="https://1.bp.blogspot.com/-WqOhiV6yq_M/YPhkeb5RT6I/AAAAAAAAA0g/OoYS8E88xukHdeIgFzOYQFMug_UhUgVYACLcBGAsYHQ/s0/Instagram-icono-oscuro.png" title="Sígueme en Instagram"/></a>
+            
+            <a href="https://wa.me/34684060427/?text=Hola,vengo de ver tu Portfolio Web." target="_blank"><img loading="lazy" alt="Sígueme en WhatsApp" height="35" width="35" src="https://1.bp.blogspot.com/-p9gdVOariGI/YPhkf6NKQMI/AAAAAAAAA1A/rWm9JjlUtiUqFhscQ6UAAXvwHLi-gJrSgCLcBGAsYHQ/s0/whatsapp-icono-oscuro.png" title="Sígueme en WhatsApp"/></a>
+        </div>
+    </footer>
+
+    <script src="Cursos.js"></script>
+</body>
+
+</html>
